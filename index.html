@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>LiveCricket</title>
+  <meta name="LiveCricket" property="" content="">
+  <link rel="shortcut icon" href="./images/icc-icon.ico">
+  <style media="screen">
+    body {
+      width: 920px;
+      background-color: lightblue;
+    }
+
+    /* .header {
+    background-color: blue;
+  } */
+    .tmbtn,
+    .rnkbtn {
+      background-color: blue;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    /* .rnk-content-men div
+    {
+      float: right;
+    } */
+
+    /* The container <div> - needed to position the dropdown content */
+    .team,
+    .rank {
+      position: relative;
+      /* display: inline-block; */
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .tm-content,
+    .rnk-content-men,.rnk-content-wmen {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .tm-content a,
+    .rnk-content-men a,.rnk-content-wmen a
+     {
+      color: blue;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .tm-content a:hover,
+    .rnk-content-men a:hover,.rnk-content-wmen a:hover
+    {
+      /* background-color: grey; */
+      color: black;
+    }
+
+    /* Show the dropdown menu on hover */
+    .team:hover .tm-content,
+    .rank:hover .rnk-content-men,.rank:hover .rnk-content-wmen {
+      display:grid;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    /* .dropdown:hover .dropbtn {
+      background-color: lightgreen;
+    } */
+    body div {
+      background-color: blue;
+      display: inline-block;
+    }
+  </style>
+</head>
+<header>
+
+</header>
+
+<body>
+  <div class="total" width="920px">
+    <div class="team">
+      <button class="tmbtn">TEAMS</button>
+      <div class="tm-content">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">U19</a>
+      </div>
+    </div>
+
+
+
+    <div class="rank">
+      <button class="rnkbtn">RANKINGS</button>
+      <div class="rnk-content-men">
+        <!-- <div class="a"> -->
+          <p>Men's Rankings</p>
+          <a href="#">Over View</a>
+          <a href="#">Team Rankings</a>
+          <a href="#">Player Rankings</a>
+        <!-- </div>
+        <div class="b"> -->
+          <p>Women's Ranking</p>
+          <a href="#">Over View</a>
+          <a href="#">Team Rankings</a>
+          <a href="#">Player Rankings</a>
+        <!-- </div> -->
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
